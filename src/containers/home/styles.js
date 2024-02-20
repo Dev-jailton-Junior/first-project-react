@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Backgroud from './assests/bg image.svg'
+import Backgroud from '../../assests/bg image.svg'
 
 export const Container = styled.div`
     background: url("${Backgroud}");
@@ -24,7 +24,7 @@ border-radius: 61px 61px 0px 0px;
 padding: 50px 36px;
 display: flex;
 flex-direction: column;
-height: 100vh;
+height: 100%;
 
 `;
 
@@ -46,7 +46,6 @@ font-size: 18px;
 line-height: 22px;
 color: #eeeeee;
 margin-left: 25px;
-margin-bottom: 34px;
 `;
 
 export const Input = styled.input`
@@ -69,6 +68,7 @@ color: #ffffff;
 export const Button = styled.button`
 width: 342px;
 height: 74px;
+margin-top: 130px;
 background: rgba(0, 0, 0, 0.8);
 border-radius: 14px;
 border: none;
@@ -82,6 +82,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 gap: 20px;
+
  &:hover{
     opacity: 0.8;
  }
@@ -90,30 +91,3 @@ gap: 20px;
  }
 `;
 
-export const User = styled.li`
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: rgba(255,255,255,0.25);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 14px;
-    width: 342px;
-    height: 58px;
-    border: none;
-    outline: none;
-    margin-top: 20px;
-
-    p{
-        font-size: 20px;
-        font-style: normal;
-        font-weight: normal;
-        line-height: 28px;
-        color: #ffffff;
-    }
-
-    button{
-        background: none;
-        border: none;
-        cursor: pointer;
-    }
-`
